@@ -1,32 +1,33 @@
 Development IDE Stack:
   Visual Studio 2011  Beta
   IntelliJ WebStorm
-  CoffeeScript (You can use WebStorm to develop it, and VS to automate its compilation to js)
+  CoffeeScript (via WebStorm, VS to automate its compilation to js via plugin)
 
 Visual Studio Recommended Plugins:
   --coming soon
   
-Target Screens:
+Target Front Ends Screens:
   Mobile Phones
   Desktop PC
   Tablets
 
 Patterns and Practices:
   MVC 4.0 for UI
+    
+Backend:
   Restful services with WCF OpenRasta
-  
-Backend Database:
   MongoDB
 
 
 Unit Testing:
   SpecFlow
+  MSTest with Visual Studio
   Javascript Unit Tests through WebStorm IDE
-  MS Test with Visual Studio
 
 
 Javascript Libraries:
   JQuery
   OscarGodson/jKey: for key bindings 
-  jsMessage: for messaging to screen etc
   jQueryValidate
+  backboneJs http://documentcloud.github.com/backbone/
+  jsMessage: for messaging to screen etc
