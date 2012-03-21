@@ -1,4 +1,3 @@
-
 Development IDE Stack:
   Visual Studio 2011  Beta
   IntelliJ WebStorm
@@ -12,15 +11,22 @@ Target Screens:
   Desktop PC
   Tablets
 
-UI Framework:
-  MVC 4.0
+Patterns and Practices:
+  MVC 4.0 for UI
+  Restful services with WCF OpenRasta
   
+Backend Database:
+  MongoDB
+
 
 Unit Testing:
   SpecFlow
   Javascript Unit Tests through WebStorm IDE
+  MS Test with Visual Studio
 
 
 Javascript Libraries:
   JQuery
-  
+  OscarGodson/jKey: for key bindings 
+  jsMessage: for messaging to screen etc
+  jQueryValidate
