@@ -1,0 +1,30 @@
+* Will attempt to use the following technologies in this project
+- jQuery
+- Node.js
+- RESTful services
+- CoffeeScript.js 
+- jQueryValidate
+- MVC4
+- PhoneGap
+
+
+* Under consideration: 
+- Socket.io
+- DocumentJS 
+
+* Development
+** IDE Stack:
+   Visual Studio 2011  Beta
+   IntelliJ WebStorm
+   CoffeeScript (via WebStorm, VS to automate its compilation to js via plugin)
+** Front End Technology
+   MVC 4.0 for UI - with HTML5
+
+
+* Visual Studio Recommended Plugins:
+  --coming  
+
+* Target Front Ends Screens:
+  Mobile Phones
+  Desktop PC
+  Tablet  
