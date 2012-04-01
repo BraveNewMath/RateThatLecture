@@ -1,16 +1,16 @@
 * Getting started with this project
-** TortoiseSVN Recommended
-  [[http://dbanck.de/2009/10/08/github-windows-and-tortoisegit-part-1-installing-pulling/][See Instructions here]]  
-
-** IDE: Visual Studio 2010
+  - TortoiseSVN Recommended
+    [[http://dbanck.de/2009/10/08/github-windows-and-tortoisegit-part-1-installing-pulling/][See Instructions here]]  
+  - IDE: Visual Studio 2010
 
 * Will attempt to use the following technologies in this project
-- jQuery
-- RESTful services
-- CoffeeScript.js 
-- MVC4
-- jQueryValidate
-- PhoneGap
+ - jQuery
+ - PhoneGap
+ - KnockOut.js
+ - CoffeeScript.js 
+ - MVC4
+ - jQueryValidate
+ - RESTful services
 
 * Experimental 
 - BackBone
@@ -30,7 +30,7 @@
 
 
 * Visual Studio Recommended Plugins:
-  --coming  
+  - Mindscape Web Workbench: for coffeescript inside visual studio
 
 * Target Front Ends Screens:
   Mobile Phones

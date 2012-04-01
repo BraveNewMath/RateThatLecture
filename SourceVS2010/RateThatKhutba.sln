@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateThatKhutba", "RateThatKhutba\RateThatKhutba.csproj", "{50DD494F-79E6-4885-99FD-8F0F321CBD85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cordova1", "Cordova1\Cordova1.csproj", "{3C300AA0-D7F2-47F9-A5B7-9A25CF34FE08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetScriptReferences", "NugetScriptReferences\NugetScriptReferences.csproj", "{0FDED0FE-EA55-499A-8101-F7CD20E94EA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,16 @@ Global
 		{50DD494F-79E6-4885-99FD-8F0F321CBD85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50DD494F-79E6-4885-99FD-8F0F321CBD85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50DD494F-79E6-4885-99FD-8F0F321CBD85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C300AA0-D7F2-47F9-A5B7-9A25CF34FE08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C300AA0-D7F2-47F9-A5B7-9A25CF34FE08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C300AA0-D7F2-47F9-A5B7-9A25CF34FE08}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3C300AA0-D7F2-47F9-A5B7-9A25CF34FE08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C300AA0-D7F2-47F9-A5B7-9A25CF34FE08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C300AA0-D7F2-47F9-A5B7-9A25CF34FE08}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0FDED0FE-EA55-499A-8101-F7CD20E94EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FDED0FE-EA55-499A-8101-F7CD20E94EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FDED0FE-EA55-499A-8101-F7CD20E94EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FDED0FE-EA55-499A-8101-F7CD20E94EA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

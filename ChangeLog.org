@@ -1,0 +1,5 @@
+* Added Cordova1, FKA PhoneGap, project 
+to test how Cordova works.  I wanted to work inside VS, so I chose a windows phone app.
+* Used Nuget to get knockout.js
+I wanted to configure nuget to install scripts in the www/scripts folder and I saw somewhee that *Install-Package NuGetPowerTools* should let you do that.  After installing it, I ran *Enable-PackageBuild*, but haven't done anything else with it.  I later disabled PackageBuild, because it was giving me errors.
+** TODO See if it's possible to 

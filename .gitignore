@@ -3,3 +3,9 @@
 README.org~
 /RateThatKhutba/bin
 /SourceVS2010/RateThatKhutba/bin/RateThatKhutba.*
+*/obj/
+*_ReSharper*
+*/bin/*
+*/Bin/*
+*.user
+*/obj/*
