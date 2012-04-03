@@ -3,7 +3,6 @@
   <head>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-	
 	<title>Cordova WP7</title>
 	
 	  <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
@@ -14,11 +13,21 @@
   <body>
 	<h1>Hello Cordova</h1>
 	<div id="welcomeMsg"></div>
-	  <p>
-		  &nbsp;</p>
-	  <button onclick="window.open('CompassTest.html')">Compass Test</button>
+	  <p>&nbsp;</p>
+	  <button id="getcurrentLocationBtn" >Get Current Location</button>
+	  <br/>
+	  <div id="">
+		  Messages go here
+	  </div>
 	  
-      <script type="text/javascript" charset="utf-8" src="scripts/libs/jquery-1.7.1.min.js"></script>
-      <script type="text/javascript" charset="utf-8" src="scripts/my.js"></script>
+	  <br/>
+	  
+	  <div id='mapDiv' style="position:relative; width:350px; height:600px;">Finding geolocation...</div>
+	  
+	  <script type="text/javascript" charset="utf-8" src="scripts/libs/jquery-1.7.1.min.js"></script>
+	  <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+	  <script type="text/javascript" charset="utf-8" src="scripts/jsConfig.js"></script>
+	  <script type="text/javascript" charset="utf-8" src="scripts/my.js"></script>
+	  <script type="text/javascript" charset="utf-8" src="scripts/RateThatKhutba1.js"></script>
   </body>
 </html>

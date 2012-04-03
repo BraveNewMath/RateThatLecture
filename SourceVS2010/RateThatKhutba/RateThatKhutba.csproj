@@ -132,6 +132,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BingMapSample.htm" />
     <Content Include="Content\Images\ajax-loader.png" />
     <Content Include="Content\Images\icons-18-black.png" />
     <Content Include="Content\Images\icons-18-white.png" />

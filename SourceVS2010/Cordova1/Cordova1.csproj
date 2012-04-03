@@ -80,40 +80,24 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\NugetScriptReferences\Scripts\jquery-1.7.1-vsdoc.js">
-      <Link>www\scripts\libs\jquery-1.7.1-vsdoc.js</Link>
-    </Content>
-    <Content Include="..\NugetScriptReferences\Scripts\jquery-1.7.1.js">
-      <Link>www\scripts\libs\jquery-1.7.1.js</Link>
-    </Content>
-    <Content Include="..\NugetScriptReferences\Scripts\jquery-1.7.1.min.js">
-      <Link>www\scripts\libs\jquery-1.7.1.min.js</Link>
-    </Content>
-    <Content Include="..\NugetScriptReferences\Scripts\jquery.mobile-1.0.1.js">
-      <Link>www\scripts\libs\jquery.mobile-1.0.1.js</Link>
-    </Content>
-    <Content Include="..\NugetScriptReferences\Scripts\jquery.mobile-1.0.1.min.js">
-      <Link>www\scripts\libs\jquery.mobile-1.0.1.min.js</Link>
-    </Content>
-    <Content Include="..\NugetScriptReferences\Scripts\jquery.validate-vsdoc.js">
-      <Link>www\scripts\libs\jquery.validate-vsdoc.js</Link>
-    </Content>
-    <Content Include="..\NugetScriptReferences\Scripts\jquery.validate.js">
-      <Link>www\scripts\libs\jquery.validate.js</Link>
-    </Content>
-    <Content Include="..\NugetScriptReferences\Scripts\jquery.validate.min.js">
-      <Link>www\scripts\libs\jquery.validate.min.js</Link>
-    </Content>
-    <Content Include="..\NugetScriptReferences\Scripts\knockout.debug.js">
-      <Link>www\scripts\libs\knockout.debug.js</Link>
-    </Content>
-    <Content Include="..\NugetScriptReferences\Scripts\knockout.js">
-      <Link>www\scripts\libs\knockout.js</Link>
-    </Content>
     <Content Include="CordovaSourceDictionary.xml" />
+    <Content Include="www\scripts\libs\jquery-1.7.1-vsdoc.js" />
+    <Content Include="www\scripts\libs\jquery-1.7.1.js" />
+    <Content Include="www\scripts\libs\jquery-1.7.1.min.js" />
+    <Content Include="www\scripts\libs\jquery.mobile-1.0.1.js" />
+    <Content Include="www\scripts\libs\jquery.mobile-1.0.1.min.js" />
+    <Content Include="www\scripts\libs\jquery.validate-vsdoc.js" />
+    <Content Include="www\scripts\libs\jquery.validate.js" />
+    <Content Include="www\scripts\libs\jquery.validate.min.js" />
+    <Content Include="www\scripts\libs\knockout.debug.js" />
+    <Content Include="www\scripts\libs\knockout.js" />
     <Content Include="www\scripts\RateThatKhutba1.js">
       <DependentUpon>RateThatKhutba1.coffee</DependentUpon>
     </Content>
+    <Content Include="www\scripts\RateThatKhutba1.min.js">
+      <DependentUpon>RateThatKhutba1.coffee</DependentUpon>
+    </Content>
+    <Content Include="www\scripts\jsConfig.js" />
     <None Include="BuildManifestProcessor.js" />
     <Content Include="GapLib\WP7CordovaClassLib.dll" />
     <Content Include="www\scripts\my.js" />
@@ -129,7 +113,11 @@
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
     </None>
-    <None Include="www\scripts\RateThatKhutba1.coffee" />
+    <None Include="www\scripts\RateThatKhutba1.coffee">
+      <Compile>True</Compile>
+      <Minify>True</Minify>
+      <Bare>True</Bare>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ApplicationIcon.png">

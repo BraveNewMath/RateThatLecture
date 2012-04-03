@@ -2,6 +2,8 @@
   - TortoiseSVN Recommended
     [[http://dbanck.de/2009/10/08/github-windows-and-tortoisegit-part-1-installing-pulling/][See Instructions here]]  
   - IDE: Visual Studio 2010
+  - Sample code to help get started with app development
+    - http://demogap.codeplex.com/ uses phonegap (cordoba) and jQuery Mobile 1.6
 
 * Will attempt to use the following technologies in this project
  - jQuery
