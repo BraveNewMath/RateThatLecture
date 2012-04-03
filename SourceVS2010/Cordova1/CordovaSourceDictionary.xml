@@ -5,6 +5,7 @@
     <FilePath Value="www\index.html"/>
     <FilePath Value="www\master.css"/>
     <FilePath Value="www\scripts\jsConfig.js"/>
+    <FilePath Value="www\scripts\jsConfigLive.js"/>
     <FilePath Value="www\scripts\my.js"/>
     <FilePath Value="www\scripts\RateThatKhutba1.coffee"/>
     <FilePath Value="www\scripts\RateThatKhutba1.js"/>

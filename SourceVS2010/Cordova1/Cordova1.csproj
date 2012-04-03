@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CordovaSourceDictionary.xml" />
+    <Content Include="www\scripts\jsConfigLive.js" />
     <Content Include="www\scripts\libs\jquery-1.7.1-vsdoc.js" />
     <Content Include="www\scripts\libs\jquery-1.7.1.js" />
     <Content Include="www\scripts\libs\jquery-1.7.1.min.js" />
