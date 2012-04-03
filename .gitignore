@@ -38,3 +38,5 @@ README.org~
 /SourceVS2010/NugetScriptReferences/obj/Debug/NugetScriptReferences.pdb
 /SourceVS2010/Cordova1/www.zip
 /ChangeLog.org~
+/SourceVS2010/Cordova1/www/scripts/jsConfigLive.js
+*.cache
