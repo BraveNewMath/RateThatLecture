@@ -9,8 +9,8 @@
     <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cordova1</RootNamespace>
-    <AssemblyName>Cordova1</AssemblyName>
+    <RootNamespace>RTK</RootNamespace>
+    <AssemblyName>RateThatKhutba</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
     <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
@@ -20,7 +20,7 @@
     </SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
-    <XapFilename>Cordova1.xap</XapFilename>
+    <XapFilename>RateThatKhutba.xap</XapFilename>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
     <SilverlightAppEntry>Cordova1.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
@@ -68,6 +68,8 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="www\scripts\msg.js" />
+    <Content Include="www\scripts\libs\BingMapControlCache.js" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -87,11 +89,19 @@
     <Content Include="www\scripts\libs\jquery-1.7.1.min.js" />
     <Content Include="www\scripts\libs\jquery.mobile-1.0.1.js" />
     <Content Include="www\scripts\libs\jquery.mobile-1.0.1.min.js" />
+    <Content Include="www\scripts\libs\jquery.ui.bmap.full.min.js" />
+    <Content Include="www\scripts\libs\jquery.ui.bmap.microdata.min.js" />
+    <Content Include="www\scripts\libs\jquery.ui.bmap.microformat.min.js" />
+    <Content Include="www\scripts\libs\jquery.ui.bmap.min.js" />
+    <Content Include="www\scripts\libs\jquery.ui.bmap.overlays.min.js" />
+    <Content Include="www\scripts\libs\jquery.ui.bmap.rdfa.min.js" />
+    <Content Include="www\scripts\libs\jquery.ui.bmap.services.min.js" />
     <Content Include="www\scripts\libs\jquery.validate-vsdoc.js" />
     <Content Include="www\scripts\libs\jquery.validate.js" />
     <Content Include="www\scripts\libs\jquery.validate.min.js" />
     <Content Include="www\scripts\libs\knockout.debug.js" />
     <Content Include="www\scripts\libs\knockout.js" />
+    <Content Include="www\scripts\libs\Modernizr1.js" />
     <Content Include="www\scripts\RateThatKhutba1.js">
       <DependentUpon>RateThatKhutba1.coffee</DependentUpon>
     </Content>
