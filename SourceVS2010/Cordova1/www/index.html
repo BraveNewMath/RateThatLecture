@@ -3,34 +3,44 @@
   <head>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-	<title>Cordova WP7</title>
-	
+	<title>Rate That Khutba</title>
+
 	  <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+	  <link rel="stylesheet" href="Content/jquery.mobile-1.0.1.min.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
 			
 	  <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
-	   
-  </head>
-  <body>
-	<h1>Hello Cordova</h1>
-	<div id="welcomeMsg"></div>
-	  <p>&nbsp;</p>
-	  <button id="getcurrentLocationBtn" >Get Current Location</button>
-	  <br/>
-	  <div id="">
-		  Messages go here
-	  </div>
-	  
-	  <br/>
-	  
-	  <div id='mapDiv' style="width:100;height:100">Finding geolocation...</div>
-	  
 	  <script type="text/javascript" charset="utf-8" src="scripts/libs/jquery-1.7.1.min.js"></script>
+	  <script type="text/javascript" charset="utf-8" src="scripts/libs/jquery.mobile-1.0.1.min.js"></script>
 	  <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
-      <script type="text/javascript" charset="utf-8" src="scripts/libs/jquery.ui.bmap.min.js"></script>
-      <script type="text/javascript" charset="utf-8" src="scripts/libs/Modernizr1.js"></script>
-      <script type="text/javascript" charset="utf-8" src="scripts/jsConfigLive.js"></script>
-      <script type="text/javascript" charset="utf-8" src="scripts/msg.js"></script>
-      <script type="text/javascript" charset="utf-8" src="scripts/my.js"></script>
+	  <script type="text/javascript" charset="utf-8" src="scripts/libs/jquery.ui.bmap.min.js"></script>
+	  <script type="text/javascript" charset="utf-8" src="scripts/libs/Modernizr1.js"></script>
+	  <script type="text/javascript" charset="utf-8" src="scripts/jsConfigLive.js"></script>
+	  <script type="text/javascript" charset="utf-8" src="scripts/msg.js"></script>
+	  <script type="text/javascript" charset="utf-8" src="scripts/my.js"></script>
 	  <script type="text/javascript" charset="utf-8" src="scripts/RateThatKhutba1.js"></script>
-  </body>
+	  <script type="text/javascript" charset="utf-8" src="scripts/PhoneGapShim1.js"></script>
+      
+  </head>
+	<body>
+		<div data-role="page">
+		    <div data-role="header"><h1>Rate That Khutba</h1></div>
+		    <div data-role="content">
+		        <div id="welcomeMsg"></div>
+		        <p>&nbsp;</p>
+		        <button id="getcurrentLocationBtn" >Get Current Location</button>
+		        <br/>
+		        <div id="">
+		            Messages go here
+		        </div>
+	  
+		        <br/>
+		
+		        <div id='mapDiv' style="width:100;height:100">Finding geolocation...</div>
+            
+		    </div><!--content-->
+		    <div data-role="footer">
+		        hello footer
+		    </div><!--footer-->
+		</div>
+	</body>
 </html>

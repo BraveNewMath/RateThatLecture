@@ -1,0 +1,3 @@
+[submodule "HelloPhoneGap"]
+	path = HelloPhoneGap
+	url = https://github.com/hutley/HelloPhoneGap.git
