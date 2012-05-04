@@ -2,18 +2,22 @@
 <!-- This file is auto-generated, do not edit! -jm -->
 <CordovaSourceDictionary>
     <FilePath Value="www\cordova-1.5.0.js"/>
+    <FilePath Value="www\IkhlasKhulaifi.mp3"/>
     <FilePath Value="www\index.html"/>
-    <FilePath Value="www\master.css"/>
+    <FilePath Value="www\play.png"/>
+    <FilePath Value="www\WebWorkbench.mswwsettings"/>
     <FilePath Value="www\Content\jquery.mobile-1.0.1.css"/>
     <FilePath Value="www\Content\jquery.mobile-1.0.1.min.css"/>
     <FilePath Value="www\Content\jquery.mobile.structure-1.0.1.css"/>
     <FilePath Value="www\Content\jquery.mobile.structure-1.0.1.min.css"/>
+    <FilePath Value="www\Content\master.css"/>
     <FilePath Value="www\Content\Site.css"/>
     <FilePath Value="www\Content\Images\ajax-loader.png"/>
     <FilePath Value="www\Content\Images\icons-18-black.png"/>
     <FilePath Value="www\Content\Images\icons-18-white.png"/>
     <FilePath Value="www\Content\Images\icons-36-black.png"/>
     <FilePath Value="www\Content\Images\icons-36-white.png"/>
+    <FilePath Value="www\Content\Images\Play-icon.png"/>
     <FilePath Value="www\Content\themes\base\jquery.ui.accordion.css"/>
     <FilePath Value="www\Content\themes\base\jquery.ui.all.css"/>
     <FilePath Value="www\Content\themes\base\jquery.ui.autocomplete.css"/>

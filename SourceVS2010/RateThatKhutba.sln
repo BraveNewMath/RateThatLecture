@@ -1,11 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateThatKhutba", "RateThatKhutba\RateThatKhutba.csproj", "{50DD494F-79E6-4885-99FD-8F0F321CBD85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateThatKhutbaService", "RateThatKhutba\RateThatKhutbaService.csproj", "{50DD494F-79E6-4885-99FD-8F0F321CBD85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cordova1", "Cordova1\Cordova1.csproj", "{3C300AA0-D7F2-47F9-A5B7-9A25CF34FE08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateThatKhutba", "Cordova1\RateThatKhutba.csproj", "{3C300AA0-D7F2-47F9-A5B7-9A25CF34FE08}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NugetScriptReferences", "NugetScriptReferences\NugetScriptReferences.csproj", "{0FDED0FE-EA55-499A-8101-F7CD20E94EA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloPhoneGap", "Cordova-1.5.0-Starter1\HelloPhoneGap.csproj", "{9BC4F947-7C45-43F9-AFE4-F8B832831248}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "www", "Cordova1\www\", "{51D62A11-81E8-43B4-A1A4-341CE1A68DA7}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/www"
+		Debug.AspNetCompiler.PhysicalPath = "Cordova1\www\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\www\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/www"
+		Release.AspNetCompiler.PhysicalPath = "Cordova1\www\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\www\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52681"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +49,16 @@ Global
 		{0FDED0FE-EA55-499A-8101-F7CD20E94EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FDED0FE-EA55-499A-8101-F7CD20E94EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FDED0FE-EA55-499A-8101-F7CD20E94EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BC4F947-7C45-43F9-AFE4-F8B832831248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC4F947-7C45-43F9-AFE4-F8B832831248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC4F947-7C45-43F9-AFE4-F8B832831248}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9BC4F947-7C45-43F9-AFE4-F8B832831248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC4F947-7C45-43F9-AFE4-F8B832831248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BC4F947-7C45-43F9-AFE4-F8B832831248}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{51D62A11-81E8-43B4-A1A4-341CE1A68DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51D62A11-81E8-43B4-A1A4-341CE1A68DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51D62A11-81E8-43B4-A1A4-341CE1A68DA7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{51D62A11-81E8-43B4-A1A4-341CE1A68DA7}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

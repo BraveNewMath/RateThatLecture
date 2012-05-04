@@ -18,10 +18,114 @@ $(document).ready(function () {
     $('#welcomeMsg').html("Cordova is ready! version=" + window.device.cordova);
 
      cfMap.useMockData = true;
-    $('#getcurrentLocationBtn').click(getLocation);
+     $('#getcurrentLocationBtn').click(getLocation);
+
+     $('#btnPlay').click(function () { playAudio("/app/www/IkhlasKhulaifi.mp3"); });
+     $('#btnPause').click(function () {pauseAudio();});
+     $('#btnStop').click(function () { stopAudio();});
     //getLocation();
 }
 
+// Audio player
+//
+var my_media = null;
+var mediaTimer = null;
+
+
+// Pause audio
+//
+var mediaPaused = false;
+function pauseAudio() {
+    msg('pause audio, mediaPaused: ' + mediaPaused);
+    if (my_media) {
+        if (mediaPaused) {
+            msg('attempting to start media: ' + my_media);
+            mediaPaused = false;
+            my_media.play();
+            $('#btnPlay').val('Pause');
+            msg('media started: ' + my_media);
+            
+        } else {
+            mediaPaused = true;
+            my_media.pause();
+            $('#btnPlay').val('Play');
+        }
+    }
+    msg('mediaPaused: ' + mediaPaused);
+}
+
+// Stop audio
+// 
+function stopAudio() {
+    if (my_media) {
+        my_media.stop();
+    }
+    clearInterval(mediaTimer);
+    mediaTimer = null;
+}
+
+// onSuccess Callback
+//
+function onSuccess() {
+    msg("playAudio():Audio Success");
+    my_media.stop();
+    my_media.release();
+    msg("stopped and released audio resource.");
+}
+
+// onError Callback 
+//
+function onError(error) {
+    if (error) {
+        msg('error code: ' + error + '\n' +
+            ((!error.code)?'':'code: ' + error.code + '\n') +
+            ((!error.message) ? '' : 'message: ' + error.message + '\n'));
+    } else {
+        msg('Encountered error, but error object is null');
+    }
+}
+
+
+// Play audio
+//
+function playAudio(src) {
+    // Create Media object from src
+    msg('about to play: ' + src, { clear: true });
+
+    if (!my_media) try { my_media.release();my_media = null; } catch (ex) { msg('error while releaseing my_media ' + ex); }
+    
+    my_media = new Media(src, onSuccess, onError);
+    
+    // Play audio
+    my_media.play();
+    
+    msg('play succeeded: ');
+    // Update my_media position every second
+    //    if (mediaTimer == null) {
+    //        mediaTimer = setInterval(function () {
+    //            // get my_media position
+    //            my_media.getCurrentPosition(
+    //            // success callback
+    //                        function (position) {
+    //                            if (position > -1) {
+    //                                setAudioPosition((position) + " sec");
+    //                            }
+    //                        },
+    //            // error callback
+    //                        function (e) {
+    //                            console.log("Error getting pos=" + e);
+    //                            setAudioPosition("Error: " + e);
+    //                        }
+    //                    );
+    //        }, 1000);
+    //    }
+}
+
+// Set audio position
+// 
+function setAudioPosition(position) {
+    document.getElementById('audio_position').innerHTML = position;
+}
 function getLocation() {
     var $mapDiv = $('#mapDiv');
     var coords = (cfMap.useMockData) ? cfMap.MockData.culverCity : { longitude: 1, latitude: 2 };
@@ -40,23 +144,23 @@ function getLocation() {
         });
     });
     $mapDiv.gmap.hide();
-//     $mapDiv.gmap({ 'callback': function () {
-//        var self = this;
-//        self.getCurrentPosition(function (result, status) {
-//            if (status === 'OK') {
-//                var clientPosition = new Microsoft.Maps.Location(result.position.coords.latitude, result.position.coords.longitude);
-//                self.addMarker({ 'location': clientPosition, 'bounds': true });
-//            }
-//        });
-//    }
-//});
+     $mapDiv.gmap({ 'callback': function () {
+        var self = this;
+        self.getCurrentPosition(function (result, status) {
+            if (status === 'OK') {
+                var clientPosition = new Microsoft.Maps.Location(result.position.coords.latitude, result.position.coords.longitude);
+                self.addMarker({ 'location': clientPosition, 'bounds': true });
+            }
+        });
+        }
+    });
 
-//$('#map_canvas').gmap('getCurrentPosition', function (result, status) {
-//    if (status === 'OK') {
-//        var clientPosition = new Microsoft.Maps.Location(result.position.coords.latitude, result.position.coords.longitude);
-//        $('#map_canvas').gmap('addMarker', { 'location': clientPosition, 'bounds': true });
-//    }
-//});
+    $('#map_canvas').gmap('getCurrentPosition', function (result, status) {
+        if (status === 'OK') {
+            var clientPosition = new Microsoft.Maps.Location(result.position.coords.latitude, result.position.coords.longitude);
+            $('#map_canvas').gmap('addMarker', { 'location': clientPosition, 'bounds': true });
+        }
+    });
 }
 
 function getLocationOld() {
@@ -75,6 +179,7 @@ function getLocationOld() {
     // onError Callback receives a PositionError object
     //
     var onError = function (error) {
+
         msg('Error code: ' + error.code + '\n' +
             'message: ' + error.message + '\n');
     };

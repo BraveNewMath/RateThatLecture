@@ -5,7 +5,8 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
 	<title>Rate That Khutba</title>
 
-	  <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+      <!--<link rel="stylesheet" href="Content/master.css" type="text/css" media="screen" title="no title" charset="utf-8"/>-->
+
 	  <link rel="stylesheet" href="Content/jquery.mobile-1.0.1.min.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
 			
 	  <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
@@ -22,25 +23,67 @@
       
   </head>
 	<body>
-		<div data-role="page">
-		    <div data-role="header"><h1>Rate That Khutba</h1></div>
-		    <div data-role="content">
-		        <div id="welcomeMsg"></div>
+		<div id="page1" data-role="page" data-theme="b" >
+		    <div data-role="header" class="ui-header" role="banner"><h4 style="text-align:center;">Rate That Khutba</h4></div>
+		    <nav data-role="navbar" data-theme="a">
+		        <ul>
+		            <li><a href="#page2">Page2</a></li>
+		            <li><a href="#page2">Dose</a></li>
+		            <li><a href="#page2">Ko'ot</a></li>
+                    <li><a href="#page2">Hulet</a></li>
+		        </ul>
+		    </nav>
+            <div data-role="content" class="ui-content" role="main">
+                <div id="welcomeMsg"></div>
+                <div  data-role="controlgroup"  data-type="horizontal">
+                    <button id="btnPlay" style="background: url(Play-icon.png) no-repeat;background-size: 100%;" >Play</button>
+                    <button id="btnPause">Pause</button>
+                    <button id="btnStop">Stop</button>
+                </div>
+
+                  <div id="msgDiv" style="font-size:12px;" title="messages go here"></div>
+		        
+                
 		        <p>&nbsp;</p>
 		        <button id="getcurrentLocationBtn" >Get Current Location</button>
+                
+		    
 		        <br/>
-		        <div id="">
-		            Messages go here
-		        </div>
-	  
-		        <br/>
-		
-		        <div id='mapDiv' style="width:100;height:100">Finding geolocation...</div>
-            
+                
+		        <audio controls="controls" preload="auto">
+		            <source src="http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3" />
+		        </audio>
+                 <a href="#" class="btn large" onclick="playAudio('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3');">Play Audio</a>
+        <a href="#" class="btn large" onclick="pauseAudio();">Pause Playing Audio</a>
+        <a href="#" class="btn large" onclick="stopAudio();">Stop Playing Audio</a>
+        <p id="audio_position"></p>
+
+		        <div id='mapDiv' style="width:100;height:100">mapDiv</div>
+		        
 		    </div><!--content-->
-		    <div data-role="footer">
-		        hello footer
+		    <div data-role="footer" data-position="fixed">
+		        <h4><a href="#page2">next</a></h4>
 		    </div><!--footer-->
-		</div>
+		</div><!-- page1 -->
+
+
+	    <div id="page2"data-role="page" data-theme="b" >
+	        <div data-role="header" class="ui-header" role="banner"><h3 style="text-align:center;">Rate That Khutba</h3></div>
+               <nav data-role="navbar" data-theme="a">
+		        <ul>
+		            <li><a href="#page1">Page 1</a></li>
+		            <li><a href="#page1">Uno</a></li>
+		            <li><a href="#page1">Ahad</a></li>
+                    <li><a href="#page1">Aand</a></li>
+		        </ul>
+		    </nav>
+	        <div data-role="content" class="ui-content" role="main">
+	            This is Page 2
+	        </div><!--content-->
+	        <div data-role="footer" data-position="fixed">
+	            <h4><a href="#page1">back</a></h4>
+	        </div><!--footer-->
+	    </div><!-- page2 -->
+
 	</body>
 </html>
